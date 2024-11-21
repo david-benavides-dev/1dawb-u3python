@@ -2,7 +2,7 @@
 # Escribir un programa que pregunte por una muestra de números, separados por comas, los guarde en una lista y muestre por pantalla su media y desviación típica.
 
 
-def pedir_numero(msj: str) -> float:
+def pedir_numero(msj: str) -> int:
     """
     Solicita al estudiante una entrada, validando que sea un número.
 
@@ -10,7 +10,7 @@ def pedir_numero(msj: str) -> float:
         msj (str): Mensaje que se mostrará al solicitar el número.
 
     Returns:
-        float: El número introducido, validado y convertido a float.
+        int: El número introducido, validado y convertido a int
     """
     num = None
     while num is None:
@@ -18,12 +18,12 @@ def pedir_numero(msj: str) -> float:
         if not validar_numero(num):
             num = None
         else:
-            return float(num)
+            return int(num)
 
 
 def validar_numero(num: str) -> bool:
     """
-    Valida que la entrada sea un número tipo float y esté entre el rango de 0 a 10.
+    Valida que la entrada sea un número tipo entero y esté entre el rango de 0 a 100.
 
     Args:
         num (str): El número a validar.
@@ -32,8 +32,8 @@ def validar_numero(num: str) -> bool:
         bool: True si es número válido, False en caso de no serlo.
     """
     try:
-        num = float(num)
-        if num >= 0 and num <= 10:
+        num = int(num)
+        if num >= 0 and num <= 100:
             return True
         else:
             raise Exception("*ERROR* La nota debe estar entre 0 y 10.")
@@ -55,10 +55,10 @@ def add_numeros_lista(msj: str) -> list:
     salir = False
     while not salir:
         numero = pedir_numero(msj)
-        if numero != "":
-            lista_numeros.append(numero)
-        else:
+        if numero == 0:
             salir = True
+        else:
+            lista_numeros.append(numero)
     
     return lista_numeros
             
