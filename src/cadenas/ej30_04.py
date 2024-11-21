@@ -3,8 +3,15 @@
 # y escribe el código necesario para invocar a este método y contar el número de veces que una letra aparece en “banana”.
 
 
+def cuenta(palabra, letra) -> int:
+    """
+    
+    """
+    return palabra.count(letra)
+
+
 def main():
-    pass
+    print(cuenta("banana", "a"))
 
 
 if __name__ == "__main__":

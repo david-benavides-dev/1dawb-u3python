@@ -15,7 +15,7 @@ asignaturas = [
 
 def pedir_numero(msj: str) -> float:
     """
-    Solicita al estudiante  introducir un número, validando que sea un número.
+    Solicita al estudiante una entrada, validando que sea un número.
 
     Args:
         msj (str): Mensaje que se mostrará al solicitar el número.

@@ -11,8 +11,20 @@
 # Encapsúlalo en una función llamada cuenta, y hazla genérica de tal modo que pueda aceptar una cadena y una letra como argumentos.
 
 
+def cuenta(palabra, letra) -> int:
+    """
+    
+    """
+    contador = 0
+    for letra in palabra:
+        if letra == 'a':
+            contador = contador + 1
+
+    return contador
+
+
 def main():
-    pass
+    print(cuenta("banana", "a"))
 
 
 if __name__ == "__main__":
