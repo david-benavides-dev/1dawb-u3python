@@ -19,7 +19,7 @@ def recorrer_palabra_inversa(palabra: str) -> str:
 
 
 def main():
-    print( recorrer_palabra_inversa("hola"))
+    print(recorrer_palabra_inversa("hola"))
 
 
 if __name__ == "__main__":

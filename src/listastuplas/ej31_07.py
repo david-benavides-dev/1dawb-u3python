@@ -5,39 +5,27 @@
 abecedario = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
 
-# Primer intento, creando y actualizando una lista nueva
-def remover_multiplos_tres(abecedario):
+# Segundo intento, removiendo elementos de la lista original
+def remover_multiplos_tres(abecedario: list) -> list:
     """
     
     """
     abecedario_sin_letras = []
 
-    for letra in abecedario:
-        if abecedario.index(letra) % 3 != 0:
-            abecedario_sin_letras.append(letra)
+ 
+    i = 0
+    while i < len(abecedario):
+        if i % 3 != 0:
+            abecedario_sin_letras.append(abecedario[i - 1])
+
+
+        i += 1
 
     return abecedario_sin_letras
 
 
-# Segundo intento, removiendo elementos de la lista original
-def remover_multiplos_tres_v2(abecedario):
-    """
-    
-    """
-    i = len(abecedario)
-
-    while i >= 0:
-        if i % 3 == 0:
-            abecedario.pop(i)
-
-        i -= 1
-
-    return abecedario
-
-
 def main():
     print(remover_multiplos_tres(abecedario))
-    print(remover_multiplos_tres_v2(abecedario))
 
 
 if __name__ == "__main__":
