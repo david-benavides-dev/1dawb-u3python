@@ -12,6 +12,7 @@ precios = [
     8
 ]
 
+
 def retornar_min_max(precios: list) -> list:
     """
     Calcula el precio menor y mayor de una lista dada y retorna una lista con los dos valores.
@@ -36,9 +37,8 @@ def mostrar_precios(precios: list) -> str:
     Returns:
         str: Una cadena con el precio mínimo y máximo junto a un texto.
     """
-    
+    return f"El precio mínimo es {precios[0]} y el máximo {precios[1]}."
 
-    return f" {" ".join(map(str, precios))}"
 
 def main():
     minmax = retornar_min_max(precios)
