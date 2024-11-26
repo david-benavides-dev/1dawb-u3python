@@ -7,8 +7,39 @@
 #     Mostrar si todos los nombres de primaria están incluidos en secundaria.
 
 
+def solicitar_nombres_primaria():
+    nombres_primaria = set()
+
+    salir_bucle = False
+    while not salir_bucle:
+        nombres = input("Intoduce un nombre >> ")
+        if nombres == "x":
+            salir_bucle = True
+        else:
+            nombres_primaria.add(nombres)
+    
+    return nombres_primaria
+
+
+def solicitar_nombres_secundaria():
+    nombres_secundaria = set()
+
+    salir_bucle = False
+    while not salir_bucle:
+        nombres = input("Intoduce un nombre >> ")
+        if nombres == "x":
+            salir_bucle = True
+        else:
+            nombres_secundaria.add(nombres)
+    
+    return nombres_secundaria
+
+
 def main():
-    pass
+    primaria = solicitar_nombres_primaria()
+    secundaria = solicitar_nombres_secundaria()
+    print(primaria)
+    print(secundaria)
 
 
 if __name__ == "__main__":

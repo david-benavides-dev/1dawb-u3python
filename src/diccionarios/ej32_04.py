@@ -18,14 +18,28 @@ meses = {
 }
 
 
+def pedir_fecha(msj: str) -> list:
+    """
+    
+    """
+    fecha = input(msj)
+    return fecha.split("/")
 
 
+def mostrar_fecha(meses, fecha):
+    """
+    
+    """
+    mes = meses[fecha[1]]
 
+    return f"{fecha[0]} de {mes} de {fecha[2]}"
 
 
 
 def main():
-    pass
+    fecha = pedir_fecha("Dime la fecha con formato dd/mm/aaaa: ")
+
+    print(mostrar_fecha(meses, fecha))
 
 
 if __name__ == "__main__":

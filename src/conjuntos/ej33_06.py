@@ -5,12 +5,13 @@
 #     Crea un conjunto letras_comunes que contenga las letras que están tanto en el conjunto vocales como en el conjunto consonantes.
 
 
-vocales = {'a', 'e', 'i', 'o', 'u'}
-consonantes = ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]
-
-
 def main():
-    pass
+    vocales = {'a', 'e', 'i', 'o', 'u'}
+    consonantes = {"b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"}
+
+    abecedario = vocales | consonantes
+
+    print(abecedario)
 
 
 if __name__ == "__main__":

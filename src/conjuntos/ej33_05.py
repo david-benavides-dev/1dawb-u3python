@@ -7,8 +7,21 @@
 
 
 def main():
-    pass
+    numeros = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    pares = set()
+    multiplos_3 = set()
 
+    for n in numeros:
+        if n % 2 == 0:
+            pares.add(n)
+        if n % 3 == 0:
+            multiplos_3.add(n)
+    
+    pares_y_multiplos_de_tres = pares & multiplos_3
+
+    print(pares)
+    print(multiplos_3)
+    print(pares_y_multiplos_de_tres)
 
 if __name__ == "__main__":
     main()
