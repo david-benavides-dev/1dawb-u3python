@@ -8,6 +8,9 @@
 
 
 def solicitar_nombres_primaria():
+    """
+    
+    """
     nombres_primaria = set()
 
     salir_bucle = False
@@ -22,6 +25,9 @@ def solicitar_nombres_primaria():
 
 
 def solicitar_nombres_secundaria():
+    """
+    
+    """
     nombres_secundaria = set()
 
     salir_bucle = False
@@ -38,8 +44,17 @@ def solicitar_nombres_secundaria():
 def main():
     primaria = solicitar_nombres_primaria()
     secundaria = solicitar_nombres_secundaria()
-    print(primaria)
-    print(secundaria)
+    #     Mostrar los nombres de todos los alumnos de primaria y los de secundaria, sin repeticiones.
+    primaria_y_secundaria = primaria | secundaria
+    print(primaria_y_secundaria)
+    #     Mostrar qué nombres se repiten entre los alumnos de primaria y secundaria.
+    primaria_secundaria_rep = primaria & secundaria
+    print(primaria_secundaria_rep)
+    #     Mostrar qué nombres de primaria no se repiten en los de nivel secundaria.
+    no_repetidos_secundaria = secundaria - primaria
+    print(no_repetidos_secundaria)
+    #     Mostrar si todos los nombres de primaria están incluidos en secundaria.
+    print(primaria == secundaria)
 
 
 if __name__ == "__main__":

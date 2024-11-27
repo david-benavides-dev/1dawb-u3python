@@ -64,7 +64,6 @@ def calcular_matriz(matriz1: tuple, matriz2: tuple) -> tuple:
         # Fila 1 por columna 1, fila 1 por columna 2
         for i in range(len(matriz1[0])):
             producto += matriz1[0][i] * matriz2[i][0]
-        for i in range(len(matriz1[0])):
             producto2 += matriz1[0][i] * matriz2[i][1]
 
         matriz.append((producto, producto2))
@@ -75,7 +74,6 @@ def calcular_matriz(matriz1: tuple, matriz2: tuple) -> tuple:
         # Fila 2 por columna 1, fila 2 por columna 2
         for i in range(len(matriz2)):
             producto += matriz1[1][i] * matriz2[i][0]
-        for i in range(len(matriz2)):
             producto2 += matriz1[1][i] * matriz2[i][1]
 
         matriz.append((producto, producto2))
