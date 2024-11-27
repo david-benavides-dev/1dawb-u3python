@@ -20,7 +20,6 @@ def mostrar_resultado(v1: tuple, v2: tuple, resultado: int) -> str:
     """
     resultado = "v1 = (" +  f"{', '.join(map(str, v1))}".rstrip() + ")\n" + "v2 = (" +  f"{', '.join(map(str, v2))}".rstrip() + ")\n" + f"Producto = {str(resultado)}"
 
-
     return resultado
 
 
