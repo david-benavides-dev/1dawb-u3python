@@ -7,8 +7,24 @@
 # [set(), set([6]), set([1]), set([4]), set([6, 1]), set([6, 4]), set([1, 4]), set([6, 1, 4])]
 
 
+def conjunto_potencia(conjunto_original: set) -> list:
+    potencia = [set()]
+
+    for elemento in conjunto_original:
+        nuevo_subconjuntos = []
+        for subconjunto in potencia:
+            nuevo_subconjuntos.append(subconjunto | {elemento})
+        
+        potencia.extend(nuevo_subconjuntos)
+
+    return potencia
+
+
 def main():
-    pass
+
+    conjunto_original = {6, 1, 4}
+
+    print(conjunto_potencia(conjunto_original))
 
 
 if __name__ == "__main__":
