@@ -10,6 +10,27 @@
 # Total 	Coste
 
 
+def pedir_productos():
+    """
+    Pide productos al usuario hasta que introduce una cadena vacía, retornando un diccionario con Articulo-Producto.
+    """
+    pass
+
+
+def mostrar_productos():
+    """
+    
+    """
+    pass
+
+
+def sumar_precio_productos():
+    """
+    
+    """
+    pass
+
+
 def main():
     pass
 

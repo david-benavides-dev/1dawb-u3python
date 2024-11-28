@@ -74,7 +74,6 @@ def crear_diccionario() -> dict:
     return informacion_cliente
 
 
-
 def mostrar_datos_usuario(informacion_cliente: dict) -> str:
     """
     
