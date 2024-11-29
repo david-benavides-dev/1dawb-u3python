@@ -16,8 +16,8 @@ def cuenta(palabra, letra) -> int:
     
     """
     contador = 0
-    for letra in palabra:
-        if letra == 'a':
+    for letras in palabra:
+        if letra in letras:
             contador = contador + 1
 
     return contador
