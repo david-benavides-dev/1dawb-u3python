@@ -56,18 +56,18 @@ def crear_diccionario() -> dict:
 
     nombre = input("Introduce tu nombre: ")
     informacion_cliente.update({'nombre': nombre})
-    print(informacion_cliente)
+    mostrar_datos_usuario_v2(informacion_cliente)
     edad = input("Introduce tu edad: ")
 
     if validar_edad(edad):
         informacion_cliente.update({'edad': int(edad)})
     else:
         informacion_cliente.update({'edad': 99})
-    print(informacion_cliente)
+    mostrar_datos_usuario_v2(informacion_cliente)
 
     direccion = input("Introduce tu dirección: ")
     informacion_cliente.update({'direccion': direccion})
-    print(informacion_cliente)
+    mostrar_datos_usuario_v2(informacion_cliente)
     telefono = input("Introduce tu número de teléfono: ")
 
     if validar_telefono(telefono):
@@ -75,7 +75,7 @@ def crear_diccionario() -> dict:
     else:
         informacion_cliente.update({'telefono': 999999999})
 
-    print(informacion_cliente)
+    mostrar_datos_usuario_v2(informacion_cliente)
 
     return informacion_cliente
 
@@ -101,7 +101,9 @@ def mostrar_datos_usuario_v2(informacion_cliente: dict) -> str:
     Returns:
         str: La información del cliente formateada a cadena.
     """
-    pass
+
+    for clave, valor in informacion_cliente.items():
+        print(f"{clave}: {valor}")
 
 
 def main():

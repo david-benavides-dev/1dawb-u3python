@@ -6,8 +6,32 @@
 # Si una palabra no está en el diccionario debe dejarla sin traducir.
 
 
-def main():
+def generar_diccionario_ingles():
+    """
+    
+    """
+    traduccion = dict()
     pass
+
+
+def crear_frase():
+    """
+    
+    """
+    pass
+
+
+def traduccir_frase(diccionario: dict, frase: str) -> str:
+    """
+    
+    """
+    pass
+
+
+def main():
+    while True:
+        traduccion.update({input("Introduce una palabra: "):input("Introduce su traducción: ")})
+        print(traduccion)
 
 
 if __name__ == "__main__":
