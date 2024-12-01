@@ -18,9 +18,18 @@
 #     Mostrar la lista de clientes preferentes de la base de datos con su NIF y nombre.
 #     Terminar el programa.
 
+def mostrar_menu():
+    return """(1) Añadir cliente
+(2) Eliminar cliente
+(3) Mostrar cliente 
+(4) Listar todos los clientes
+(5) Listar clientes preferentes
+(6) Terminar"""
+
+
 
 def main():
-    pass
+    print(mostrar_menu())
 
 
 if __name__ == "__main__":
