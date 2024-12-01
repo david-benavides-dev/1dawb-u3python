@@ -18,6 +18,30 @@
 #     Mostrar la lista de clientes preferentes de la base de datos con su NIF y nombre.
 #     Terminar el programa.
 
+lista_clientes = {
+
+    "46035241B" : {
+        "nombre": "Perico",
+        "direccion": "Porriña 34 A",
+        "telefono": "668741579",
+        "correo": "inventanding@gmail.com",
+    },
+
+    "74155487Z" : {
+        "nombre": "Ana Gómez",
+        "direccion": "Avenida Principal 45",
+        "telefono": "650987654",
+        "correo": "ana.gomez@mail.com",
+    },
+
+    "12345678A" : {
+        "nombre": "Juan Pérez",
+        "direccion": "Calle Falsa 123",
+        "telefono": "600123456",
+        "correo": "juan.perez@mail.com",
+    }
+}
+
 def mostrar_menu():
     return """(1) Añadir cliente
 (2) Eliminar cliente
